@@ -1,0 +1,30 @@
+{
+    "name": "russelljapheth/jsearch",
+    "description": "This is a simple command line search tool written in php",
+    "type": "project",
+    "keywords":    ["jsearch", "cli", "search"],
+    "homepage":    "http://github.com/russelljapheth/jsearch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Russell Japheth",
+            "email": "japheth.russell.i@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+        "files":[
+            "lib/cli/cli.php",
+            "lib/classes/Benchmark.php",
+            "lib/functions/utilities.php",
+            "lib/functions/search.php",
+            "lib/functions/result_first.php"
+        ],
+        "psr-0": {
+            "cli": "lib/"
+        }
+    },
+    "require": {
+        "corollarium/cachearium": "^2.0"
+    }
+}
